@@ -147,8 +147,8 @@ const TableInfo = ({ data, resetData }) => {
                 beepTestDataModel.nombre = elem.Nombre
                 beepTestDataModel.email = elem.Correo
                 beepTestDataModel.evaluacionID = evaluation.id
-                beepTestDataModel.lvl = evaResult.substring(0,evaResult.indexOf('.'))
-                beepTestDataModel.total = evaResult.substring((evaResult.indexOf('.') + 1),evaResult.length)
+                beepTestDataModel.lvl = Number(evaResult.substring(0,evaResult.indexOf('.')))
+                beepTestDataModel.total = Number(evaResult.substring((evaResult.indexOf('.') + 1),evaResult.length))
                 beepTestDataModel.fecha = elem.Fecha
 
                 evaluationDataArray.push(beepTestDataModel)
@@ -224,8 +224,8 @@ const TableInfo = ({ data, resetData }) => {
               beepTestDataModel.nombre = elem.Nombre
               beepTestDataModel.email = elem.Correo
               beepTestDataModel.evaluacionID = evaluation.id
-              beepTestDataModel.lvl = evaResult.substring(0,evaResult.indexOf('.'))
-              beepTestDataModel.total = evaResult.substring((evaResult.indexOf('.') + 1),evaResult.length)
+              beepTestDataModel.lvl = Number(evaResult.substring(0,evaResult.indexOf('.')))
+              beepTestDataModel.total = Number(evaResult.substring((evaResult.indexOf('.') + 1),evaResult.length))
               beepTestDataModel.fecha = elem.Fecha
 
               evaluationDataArray.push(beepTestDataModel)
